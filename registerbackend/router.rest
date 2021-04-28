@@ -1,0 +1,27 @@
+POST http://localhost:4000/user/register
+Content-Type: application/json
+
+{
+    "fullname":"Manish",
+    "email":"manish@nagaroo.com",
+    "mobileno":"9386815726",
+    "password":"A@123",
+    "confirmpwd":"A@123"
+}
+###
+
+POST http://localhost:4000/user/signin
+Content-Type: application/json
+
+{
+    "email":"aditya@leewayhertz.com",
+    "password":"A@123"
+}
+
+###
+
+GET http://localhost:4000/user/register/6088fac202472319d46827c3
+
+###
+
+GET http://localhost:4000/user/register/aditya@leewayhertz.com?type=email
